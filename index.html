@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert Senna - Personal Website</title>
-    <style>
+    <style> 
+      @keyframes colorFlash {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: orange; }
+            100% { color: yellow; }
+        }
+
+        #flashing-name {
+            animation: colorFlash 5s infinite; 
+        
+        
+        
         body {
             font-family: Arial, sans-serif;
             background-color:  #333; /* Dark gray color */
@@ -44,7 +57,7 @@
 </head>
 <body>
     <header>
-        <h1>Robert Senna</h1>
+        <h1 id="flashing-name">Robert Senna</h1>
         <p>Computer Game Enthusiast | Technology Lover | American History Buff</p>
     </header>
 
