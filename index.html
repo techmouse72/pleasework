@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color:  #333; /* Dark gray color */
+            background-color: #333; /* Dark gray color */
             color: white;
             margin: 0;
             padding: 0;
@@ -54,6 +56,34 @@
         .flashing-text {
             animation: flash 2s infinite; /* Adjust the duration as needed */
         }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 10px;
+            }
+
+            footer {
+                padding: 5px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -70,15 +100,12 @@
         </p>
         <h2 class="flashing-text">Happy Holidays!</h2>
         <p>
-      <span class="flashing-text">Wishing you joy and warmth during this festive season.</span> <br>
+            <span class="flashing-text">Wishing you joy and warmth during this festive season.</span> <br>
         </p>
-        
-            
-        </p>
-    <div class="image-container">
-        <img src="Happy holidays.png" alt="Happy Holidays Greeting 2">
-                                 <img src="Holiday.png" alt="Existing Image" class="upper-right">
-    </div>
+        <div class="image-container">
+            <img src="Happy holidays.png" alt="Happy Holidays Greeting 2">
+            <img src="Holiday.png" alt="Existing Image" class="upper-right">
+        </div>
     </section>
 
     <section>
@@ -95,4 +122,3 @@
     </footer>
 </body>
 </html>
-
