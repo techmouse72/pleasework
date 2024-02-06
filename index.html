@@ -57,6 +57,19 @@
             max-width: 100%;
             height: auto;
         }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 </head>
 <body>
@@ -75,6 +88,19 @@
         <p>
             <span class="flashing-text">Wishing you joy and warmth during this festive season.</span> <br>
         </p>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="column">
+                <img src="Patrick Mahomes.png" alt="Patrick Mahomes">
+                <p>Can Patrick Mahomes and the Chiefs pull out a win vs Purdy and the 49ers? We will see!</p>
+            </div>
+            <div class="column">
+                <p>The great game of baseball starts in less than 2 months. Let's hope the Yankees can get something going this year with their offensive firepower and new look pitching.</p>
+                <img src="baseball field" alt="Baseball Diamond under a Sunrise">
+            </div>
+        </div>
     </section>
 
     <section>
