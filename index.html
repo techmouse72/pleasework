@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,6 +71,35 @@
             display: table;
             clear: both;
         }
+
+        /* Style for comment form */
+        .comment-form {
+            margin-top: 20px;
+            background-color: #555;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .comment-form label {
+            color: #fff;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .comment-form textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .comment-form input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -108,6 +138,15 @@
             <li>Conquering virtual worlds through computer games.</li>
             <li>Delving into the rich history of the United States.</li>
         </ul>
+    </section>
+
+    <section class="comment-form">
+        <h2>Leave a Comment</h2>
+        <form>
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" name="comment" placeholder="Write your comment here..." required></textarea><br>
+            <input type="submit" value="Submit Comment">
+        </form>
     </section>
 
     <footer>
