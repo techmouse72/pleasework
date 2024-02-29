@@ -1,177 +1,29 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robert Senna - Personal Website</title>
-    <style>
-        body {
-            background-color: #0a3866; /* Darker blue background color for the entire page */
-            color: #ffffff; /* White text color for better contrast */
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #3498db; /* Dodger blue background color for the header */
-            color: #fff; /* White text color for the header */
-            padding: 20px;
-            text-align: center;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px 0;
-        }
-
-        h1, h2, p, li {
-            color: #ffffff; /* White text color for headings, paragraphs, and list items */
-        }
-
-        /* Your existing styles */
-
-        @media only screen and (max-width: 600px) {
-            header {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            section {
-                padding: 10px;
-            }
-
-            footer {
-                padding: 5px;
-            }
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Style for comment form */
-        .comment-form {
-            margin-top: 20px;
-            background-color: #555;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        .comment-form label {
-            color: #fff;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .comment-form textarea {
-            width: 100%;
-            height: 100px;
-            margin-bottom: 10px;
-        }
-
-        .comment-form input[type="submit"] {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Robert Senna</h1>
-        <p>Computer Game Enthusiast | Technology Lover | American History Buff</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Robert Senna! I have a deep passion for computer games, technology, and American history.
-            Join me on my journey as I explore these fascinating worlds and share my insights with you.
-        </p>
-        <h2 class="flashing-text">Happy Holidays!</h2>
-        <p>
-            <span class="flashing-text">Wishing you joy and warmth during this festive season.</span> <br>
-        </p>
-    </section>
-
-    <section class="row">
-        <div class="column">
-            <img src="Patrick Mahomes.png" alt="Patrick Mahomes">
-            <p>Can Patrick Mahomes and the Chiefs pull out a win vs Purdy and the 49ers? We will see!</p>
-        </div>
-        <div class="column">
-            <p>The great game of baseball starts in less than 2 months. Let's hope the Yankees can get something going this year with their offensive firepower and new look pitching.</p>
-            <img src="baseball field.png" alt="Baseball Field">
-        </div>
-    </section>
-
-    <section>
-        <h2>Interests</h2>
-        <ul>
-            <li>Exploring the latest in technology and gadgets.</li>
-            <li>Conquering virtual worlds through computer games.</li>
-            <li>Delving into the rich history of the United States.</li>
-        </ul>
-    </section>
-
-   <div class="comment">
-<textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea>
-<input type="submit" value="Post" onclick="insert()" style="width:20px;" /></form>
+<div class="comment">
+    <textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea>
+    <input type="submit" value="Post" onclick="insert()" style="width:20px;" /></form>
 </div>
 <div id="display"></div>
 <script type="text/javascript">
-var titles = [];
-var titleInput = document.getElementById("title");
-var messageBox = document.getElementById("display");
-function Allow()
-{
-if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
-{
-user.title.value="";
-alert("Please Enter only alphabets");
-}
-window.location.reload()
-}
-function insert () {
-titles.push(titleInput.value);
-clearAndShow();
-}
-function clearAndShow ()
-{
-titleInput.value = "";
-messageBox.innerHTML = "";
-messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
-}
+    var titles = [];
+    var titleInput = document.getElementById("title");
+    var messageBox = document.getElementById("display");
+    function Allow()
+    {
+    if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+    {
+    user.title.value="";
+    alert("Please Enter only alphabets");
+    }
+    window.location.reload()
+    }
+    function insert () {
+    titles.push(titleInput.value);
+    clearAndShow();
+    }
+    function clearAndShow ()
+    {
+    titleInput.value = "";
+    messageBox.innerHTML = "";
+    messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+    }
 </script>
-
-    <footer>
-        <p>Contact: rsenna111@gmail.com</p>
-    </footer>
-</body>
-</html>
