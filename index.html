@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,33 +48,20 @@
             clear: both;
         }
 
-        /* Style for comment form */
-        .comment-form {
-            margin-top: 20px;
-            background-color: #555;
-            padding: 20px;
-            border-radius: 10px;
+        .player-box {
+            width: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            float: left; /* Float the boxes to create a horizontal layout */
         }
 
-        .comment-form label {
-            color: #fff;
-            display: block;
+        .player-box img {
+            width: 100px; /* Adjust the size of the player's photo */
+            height: auto;
             margin-bottom: 10px;
-        }
-
-        .comment-form textarea {
-            width: 100%;
-            height: 100px;
-            margin-bottom: 10px;
-        }
-
-        .comment-form input[type="submit"] {
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
         }
     </style>
 </head>
@@ -106,13 +94,34 @@
 
     <section class="row">
         <div class="column">
-            <img src="yanks logo.png" alt="yanks logo.png">  
+            <img src="yanks_logo.png" alt="Yankees Logo">
         </div>
         <div class="column">
-            <p>
-                Hello again! As the new baseball season starts, as a Yankee fan, here are my thoughts on this season:
-                Last season was a near disaster, where it got so bad I could no longer watch that many games. What I saw was the failure of Josh Donaldson, who couldn't even top .150, injuries, and an overall lack of motivation from the entire team. There is much more to be said about last year, but I'm looking forward to discussing much brighter pastures this year with the addition of two young guys who know how to hit. They are former Red Sox outfielder Alex Verdugo and the elite Juan Soto. As far as pitching goes, I've heard rumors that Gerrit Cole is injured, and let's only hope those are rumors. With Cole healthy and the addition of Marcus Stroman, improved Rodon, and a healthy Nestor Cortez, we should be ready to go. Here is an analysis of each player through my eyes.
-            </p>
+            <h2>New York Yankees Commentary</h2>
+
+            <!-- Player 1: Aaron Judge -->
+            <div class="player-box">
+                <img src="judge_photo.jpg" alt="Aaron Judge">
+                <h3>Aaron Judge</h3>
+                <p>Pros: When he's healthy, he will smash the ball.<br>
+                Cons: Has bad luck with injuries and strikes out some.</p>
+            </div>
+
+            <!-- Player 2: Juan Soto -->
+            <div class="player-box">
+                <img src="soto_photo.jpg" alt="Juan Soto">
+                <h3>Juan Soto</h3>
+                <p>Pros: Hits for average, walks a lot, hits for power.<br>
+                Cons: Can we afford an extension before he becomes a free agent?</p>
+            </div>
+
+            <!-- Player 3: DJ LeMahieu -->
+            <div class="player-box">
+                <img src="lemahieu_photo.jpg" alt="DJ LeMahieu">
+                <h3>DJ LeMahieu</h3>
+                <p>Pros: Excellent contact, average fielding when he's at his best.<br>
+                Cons: Age and injury may be a factor.</p>
+            </div>
         </div>
     </section>
 
@@ -121,4 +130,3 @@
     </footer>
 </body>
 </html>
-
