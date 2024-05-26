@@ -1,94 +1,190 @@
 
-<section>
-    <h2>New York Yankees Commentary</h2>
-    <p>May 25, 2024</p>
-    
-    <!-- Existing players -->
-    
-    <!-- Player: Aaron Judge -->
-    <div class="player-box">
-        <img src="Aaron Judge 2.png" alt="Aaron Judge 2">
-        <h3>Aaron Judge</h3>
-        <ul>
-            <li>Power: <span class="rating-legendary">Legendary</span></li>
-            <li>Contact: <span class="rating-average">Average</span></li>
-            <li>Speed: <span class="rating-average">Average</span></li>
-            <li>OPS: <span class="rating-legendary">Legendary</span></li>
-            <li>Defense: <span class="rating-good">Good</span></li>
-            <li>Avoid K: <span class="rating-bad">Bad</span></li>
-        </ul>
-    </div>
-    
-    <!-- Player: Juan Soto -->
-    <div class="player-box">
-        <img src="Juan Soto 2.png" alt="Juan Soto 2">
-        <h3>Juan Soto</h3>
-        <ul>
-            <li>Power: <span class="rating-excellent">Excellent</span></li>
-            <li>Contact: <span class="rating-legendary">Legendary</span></li>
-            <li>Speed: <span class="rating-excellent">Excellent</span></li>
-            <li>OPS: <span class="rating-legendary">Legendary</span></li>
-            <li>Defense: <span class="rating-good">Good</span></li>
-            <li>Avoid K: <span class="rating-excellent">Excellent</span></li>
-        </ul>
-    </div>
-    
-    <!-- Player: Alex Verdugo -->
-    <div class="player-box">
-        <img src="Alex V.png" alt="Alex V">
-        <h3>Alex Verdugo</h3>
-        <ul>
-            <li>Power: <span class="rating-bad">Bad</span></li>
-            <li>Contact: <span class="rating-average">Average</span></li>
-            <li>Speed: <span class="rating-average">Average</span></li>
-            <li>OPS: <span class="rating-average">Average</span></li>
-            <li>Defense: <span class="rating-excellent">Excellent</span></li>
-            <li>Avoid K: <span class="rating-excellent">Excellent</span></li>
-        </ul>
-    </div>
-    
-    <!-- Player: Giancarlo Stanton -->
-    <div class="player-box">
-        <img src="Gian.png" alt="Gian">
-        <h3>Giancarlo Stanton</h3>
-        <ul>
-            <li>Power: <span class="rating-legendary">Legendary</span></li>
-            <li>Contact: <span class="rating-poor">Poor</span></li>
-            <li>Speed: <span class="rating-poor">Poor</span></li>
-            <li>OPS: <span class="rating-good">Good</span></li>
-            <li>Defense: <span class="rating-poor">Poor</span></li>
-            <li>Avoid K: <span class="rating-abysmal">Abysmal</span></li>
-        </ul>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robert Senna's personal website. Computer game enthusiast, technology lover, and American history buff.">
+    <title>Robert Senna - Personal Website</title>
+    <style>
+        body {
+            background-color: #333333; /* Dark gray background color */
+            color: #ffffff; /* White text color for better contrast */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- New Player: Glenbow Torres -->
-    <div class="player-box">
-        <!-- Replace with Glenbow Torres' image -->
-        <img src="glenbow_torres.png" alt="Glenbow Torres">
-        <h3>Glenbow Torres</h3>
-        <ul>
-            <li>Power: <span class="rating-good">Good</span></li>
-            <li>Contact: <span class="rating-average">Average</span></li>
-            <li>Speed: <span class="rating-good">Good</span></li>
-            <li>OPS: <span class="rating-good">Good</span></li>
-            <li>Defense: <span class="rating-poor">Poor</span></li>
-            <li>Avoid K: <span class="rating-poor">Poor</span></li>
-        </ul>
-    </div>
+        header {
+            background-color: #3498db; /* Dodger blue background color for the header */
+            color: #fff; /* White text color for the header */
+            padding: 20px;
+            text-align: center;
+        }
 
-    <!-- New Player: Austin Wells -->
-    <div class="player-box">
-        <!-- Replace with Austin Wells' image -->
-        <img src="austin_wells.png" alt="Austin Wells">
-        <h3>Austin Wells</h3>
-        <ul>
-            <li>Power: <span class="rating-poor">Poor</span></li>
-            <li>Contact: <span class="rating-average">Average</span></li>
-            <li>Speed: <span class="rating-excellent">Excellent</span></li>
-            <li>OPS: <span class="rating-poor">Poor</span></li>
-            <li>Defense: <span class="rating-legendary">Legendary</span></li>
-            <li>Avoid K: <span class="rating-average">Average</span></li>
-        </ul>
-    </div>
+        section {
+            padding: 20px;
+            margin: 20px 0;
+        }
 
-</section>
+        h1, h2, p, li {
+            color: #ffffff; /* White text color for headings, paragraphs, and list items */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Ensure images do not have stray spaces around them */
+            margin: 0 auto; /* Center the image within its container */
+        }
+
+        .player-box {
+            width: 300px;
+            background-color: #4CAF50; /* Dark green background color */
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            float: left; /* Float the boxes to create a horizontal layout */
+        }
+
+        .player-box img {
+            width: 150px; /* Adjust the size of the player's photo */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .player-box h3 {
+            margin-bottom: 5px;
+            color: #ffffff; /* White text color for better contrast */
+        }
+
+        .player-box ul {
+            list-style-type: none;
+            padding: 0;
+            color: #ffffff; /* White text color for better contrast */
+        }
+
+        /* Rating colors */
+        .rating-legendary { color: purple; }
+        .rating-excellent { color: violet; }
+        .rating-good { color: blue; }
+        .rating-average { color: yellow; }
+        .rating-bad { color: red; }
+        .rating-abysmal { color: orange; }
+
+        /* Flashing text animation */
+        .flashing-text {
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .player-box {
+                width: 100%;
+                float: none; /* Remove float for stacked layout on smaller screens */
+                clear: both; /* Clear floats */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Robert Senna</h1>
+        <p>Computer Game Enthusiast | Technology Lover | American History Buff</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Robert Senna! I have a deep passion for computer games, technology, and American history.
+            Join me on my journey as I explore these fascinating worlds and share my insights with you.
+        </p>
+        <h2 class="flashing-text">Happy Holidays!</h2>
+        <p>
+            <span class="flashing-text">Wishing you joy and warmth during this festive season.</span>
+        </p>
+    </section>
+
+    <section>
+        <h2>Interests</h2>
+        <ul>
+            <li>Exploring the latest in technology and gadgets.</li>
+            <li>Conquering virtual worlds through computer games.</li>
+            <li>Delving into the rich history of the United States.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>New York Yankees Commentary</h2>
+        <p>May 25, 2024</p>
+        
+        <!-- Player: Aaron Judge -->
+        <div class="player-box">
+            <img src="Aaron Judge 2.png" alt="Aaron Judge 2">
+            <h3>Aaron Judge</h3>
+            <ul>
+                <li>Power: <span class="rating-legendary">Legendary</span></li>
+                <li>Contact: <span class="rating-average">Average</span></li>
+                <li>Speed: <span class="rating-average">Average</span></li>
+                <li>OPS: <span class="rating-legendary">Legendary</span></li>
+                <li>Defense: <span class="rating-good">Good</span></li>
+                <li>Avoid K: <span class="rating-bad">Bad</span></li>
+            </ul>
+        </div>
+        
+        <!-- Player: Juan Soto -->
+        <div class="player-box">
+            <img src="Juan Soto 2.png" alt="Juan Soto 2">
+            <h3>Juan Soto</h3>
+            <ul>
+                <li>Power: <span class="rating-excellent">Excellent</span></li>
+                <li>Contact: <span class="rating-legendary">Legendary</span></li>
+                <li>Speed: <span class="rating-excellent">Excellent</span></li>
+                <li>OPS: <span class="rating-legendary">Legendary</span></li>
+                <li>Defense: <span class="rating-good">Good</span></li>
+                <li>Avoid K: <span class="rating-excellent">Excellent</span></li>
+            </ul>
+        </div>
+        
+        <!-- Player: Alex Verdugo -->
+        <div class="player-box">
+            <img src="Alex V.png" alt="Alex V">
+            <h3>Alex Verdugo</h3>
+            <ul>
+                <li>Power: <span class="rating-bad">Bad</span></li>
+                <li>Contact: <span class="rating-average">Average</span></li>
+                <li>Speed: <span class="rating-average">Average</span></li>
+                <li>OPS: <span class="rating-average">Average</span></li>
+                <li>Defense: <span class="rating-excellent">Excellent</span></li>
+                <li>Avoid K: <span class="rating-excellent">Excellent</span></li>
+            </ul>
+        </div>
+        
+        <!-- Player: Giancarlo Stanton -->
+        <div class="player-box">
+            <img src="Gian.png" alt="Gian">
+            <h3>Giancarlo Stanton</h3>
+            <ul>
+                <li>Power: <span class="rating-legendary">Legendary</span></li>
+                <li>Contact: <span class="rating-poor">Poor</span></li>
+                <li>Speed: <span class="rating-poor">Poor</span></li>
+                <li>OPS: <span class="rating-good">Good</span></li>
+                <li>Defense: <span class="rating-poor">Poor</span></li>
+                <li>Avoid K: <span class="rating-abysmal">Abysmal</span></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Contact: <a href="mailto:rsenna111@gmail.com" style="color: #3498db;">rsenna111@gmail.com</a></p>
+    </footer>
+</body>
+</html>
