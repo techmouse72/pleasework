@@ -38,13 +38,14 @@
         }
 
         .player-box {
-            width: 300px;
+            width: calc(50% - 20px); /* Two boxes per row, with margin between them */
             background-color: #4CAF50; /* Dark green background color */
             border: 1px solid #ccc;
             margin: 10px;
             padding: 10px;
             text-align: center;
             float: left; /* Float the boxes to create a horizontal layout */
+            box-sizing: border-box; /* Ensure padding and border do not increase the width */
         }
 
         .player-box img {
@@ -81,6 +82,13 @@
             0% { opacity: 1; }
             50% { opacity: 0; }
             100% { opacity: 1; }
+        }
+
+        /* Clearfix for float layout */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
 
         /* Responsive design */
@@ -136,7 +144,6 @@
             </ul>
         </div>
 
-        <!-- Player: Juan Soto -->
         <div class="player-box">
             <img src="Juan Soto.png" alt="Juan Soto">
             <h3>Juan Soto</h3>
@@ -150,7 +157,6 @@
             </ul>
         </div>
 
-        <!-- Player: Alex Verdugo -->
         <div class="player-box">
             <img src="Alex Verdugo.png" alt="Alex Verdugo">
             <h3>Alex Verdugo</h3>
@@ -164,7 +170,6 @@
             </ul>
         </div>
 
-        <!-- Player: Giancarlo Stanton -->
         <div class="player-box">
             <img src="Giancarlo Stanton.png" alt="Giancarlo Stanton">
             <h3>Giancarlo Stanton</h3>
@@ -178,7 +183,6 @@
             </ul>
         </div>
 
-        <!-- Player: Anthony Volpe -->
         <div class="player-box">
             <img src="Anthony Volpe.png" alt="Anthony Volpe">
             <h3>Anthony Volpe</h3>
@@ -192,7 +196,6 @@
             </ul>
         </div>
 
-        <!-- Player: Anthony Rizzo -->
         <div class="player-box">
             <img src="Anthony Rizzo.png" alt="Anthony Rizzo">
             <h3>Anthony Rizzo</h3>
@@ -204,8 +207,4 @@
                 <li>Defense: <span class="rating-good">Good</span></li>
                 <li>Avoid K: <span class="rating-average">Average</span></li>
             </ul>
-        </div>
-
-        <!-- Player: Gleyber Torres -->
-        <div class="player-box">
-            <img src="Gleyber Torres.png" alt="Gleyber Torres
+        </
