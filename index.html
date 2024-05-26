@@ -37,27 +37,13 @@
             margin: 0 auto; /* Center the image within its container */
         }
 
-        .column {
-            float: left;
-            width: 50%;
-            padding: 10px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
         .player-box {
             width: 200px;
             background-color: #add8e6; /* Light blue background color for better contrast */
             border: 1px solid #ccc;
-            margin: 10px;
+            margin: 10px auto; /* Center the player box */
             padding: 10px;
             text-align: center;
-            float: left; /* Float the boxes to create a horizontal layout */
             color: #333; /* Darker text color for better contrast */
         }
 
@@ -138,26 +124,21 @@
         </ul>
     </section>
 
-    <section class="row">
-        <div class="column">
-            <img src="yanks logo.png" alt="New York Yankees logo">
-        </div>
-        <div class="column">
-            <h2>New York Yankees Commentary</h2>
-            <p>May 25, 2024</p>
-            <!-- Player: Aaron Judge -->
-            <div class="player-box">
-                <img src="Aaron Judge.png" alt="Aaron Judge">
-                <h3>Aaron Judge</h3>
-                <ul>
-                    <li>Power: <span class="rating-legendary">Legendary</span></li>
-                    <li>Contact: <span class="rating-average">Average</span></li>
-                    <li>Speed: <span class="rating-average">Average</span></li>
-                    <li>OPS: <span class="rating-legendary">Legendary</span></li>
-                    <li>Defense: <span class="rating-good">Good</span></li>
-                    <li>Avoid K: <span class="rating-bad">Bad</span></li>
-                </ul>
-            </div>
+    <section>
+        <h2>New York Yankees Commentary</h2>
+        <p>May 25, 2024</p>
+        <!-- Player: Aaron Judge -->
+        <div class="player-box">
+            <img src="Aaron Judge.png" alt="Aaron Judge">
+            <h3>Aaron Judge</h3>
+            <ul>
+                <li>Power: <span class="rating-legendary">Legendary</span></li>
+                <li>Contact: <span class="rating-average">Average</span></li>
+                <li>Speed: <span class="rating-average">Average</span></li>
+                <li>OPS: <span class="rating-legendary">Legendary</span></li>
+                <li>Defense: <span class="rating-good">Good</span></li>
+                <li>Avoid K: <span class="rating-bad">Bad</span></li>
+            </ul>
         </div>
     </section>
 
