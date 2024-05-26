@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,33 +38,34 @@
             margin: 0 auto; /* Center the image within its container */
         }
 
-        .player-box {
-            width: 200px;
-            background-color: #add8e6; /* Light blue background color for better contrast */
-            border: 1px solid #ccc;
-            margin: 10px auto; /* Center the player box */
-            padding: 10px;
+        .player-info {
             text-align: center;
-            color: #333; /* Darker text color for better contrast */
+            margin: 20px 0;
         }
 
-        .player-box img {
-            width: 100px; /* Adjust the size of the player's photo */
+        .player-info img {
+            width: 150px; /* Adjust the size of the player's photo */
             height: auto;
-            margin-bottom: 10px;
         }
 
-        .player-box h3 {
+        .player-info h3 {
             margin-bottom: 5px;
-            color: #333; /* Darker text color for better contrast */
+            color: #ffffff; /* White text color for better contrast */
         }
 
-        .player-box p, .player-box ul {
-            margin: 0;
-            color: #333; /* Darker text color for better contrast */
+        .player-info ul {
             list-style-type: none;
-            padding-left: 0;
+            padding: 0;
+            color: #ffffff; /* White text color for better contrast */
         }
+
+        /* Rating colors */
+        .rating-legendary { color: purple; }
+        .rating-excellent { color: violet; }
+        .rating-good { color: blue; }
+        .rating-average { color: yellow; }
+        .rating-bad { color: red; }
+        .rating-abysmal { color: orange; }
 
         /* Flashing text animation */
         .flashing-text {
@@ -76,23 +78,10 @@
             100% { opacity: 1; }
         }
 
-        /* Rating colors */
-        .rating-legendary { color: purple; }
-        .rating-excellent { color: violet; }
-        .rating-good { color: blue; }
-        .rating-average { color: yellow; }
-        .rating-bad { color: red; }
-        .rating-abysmal { color: orange; }
-
         /* Responsive design */
         @media (max-width: 768px) {
-            .column {
+            .player-info {
                 width: 100%;
-            }
-
-            .player-box {
-                width: 100%;
-                float: none;
             }
         }
     </style>
@@ -128,7 +117,7 @@
         <h2>New York Yankees Commentary</h2>
         <p>May 25, 2024</p>
         <!-- Player: Aaron Judge -->
-        <div class="player-box">
+        <div class="player-info">
             <img src="Aaron Judge.png" alt="Aaron Judge">
             <h3>Aaron Judge</h3>
             <ul>
