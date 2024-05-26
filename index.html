@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robert Senna's personal website. Computer game enthusiast, technology lover, and American history buff.">
     <title>Robert Senna - Personal Website</title>
     <style>
         body {
@@ -73,6 +74,37 @@
             margin: 0;
             color: #333; /* Darker text color for better contrast */
         }
+
+        /* Flashing text animation */
+        .flashing-text {
+            animation: flash 1s infinite;
+        }
+
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Rating colors */
+        .rating-legendary { color: purple; }
+        .rating-excellent { color: violet; }
+        .rating-good { color: blue; }
+        .rating-average { color: yellow; }
+        .rating-bad { color: red; }
+        .rating-abysmal { color: orange; }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .column {
+                width: 100%;
+            }
+
+            .player-box {
+                width: 100%;
+                float: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -89,7 +121,7 @@
         </p>
         <h2 class="flashing-text">Happy Holidays!</h2>
         <p>
-            <span class="flashing-text">Wishing you joy and warmth during this festive season.</span> <br>
+            <span class="flashing-text">Wishing you joy and warmth during this festive season.</span>
         </p>
     </section>
 
@@ -104,48 +136,29 @@
 
     <section class="row">
         <div class="column">
-            <img src="yanks logo.png" alt="yanks logo">
+            <img src="yanks logo.png" alt="New York Yankees logo">
         </div>
         <div class="column">
             <h2>New York Yankees Commentary</h2>
-
-            <!-- Player 1: Aaron Judge -->
+            <p>May 25, 2024</p>
+            <!-- Player: Aaron Judge -->
             <div class="player-box">
                 <img src="Aaron Judge.png" alt="Aaron Judge">
                 <h3>Aaron Judge</h3>
-                <p>Pros: When he's healthy, he will smash the ball.<br>
-                Cons: Has bad luck with injuries and strikes out some.</p>
-            </div>
-
-            <!-- Player 2: Juan Soto -->
-            <div class="player-box">
-                <img src="Juan Soto.png" alt="Juan Soto">
-                <h3>Juan Soto</h3>
-                <p>Pros: Hits for average, walks a lot, hits for power.<br>
-                Cons: Can we afford an extension before he becomes a free agent?</p>
-            </div>
-
-            <!-- Player 3: DJ LeMahieu -->
-            <div class="player-box">
-                <img src="Dj lie.png" alt="Dj lie">
-                <h3>DJ LeMahieu</h3>
-                <p>Pros: Excellent contact, average fielding when he's at his best.<br>
-                Cons: Age and injury may be a factor.</p>
+                <ul>
+                    <li>Power: <span class="rating-legendary">Legendary</span></li>
+                    <li>Contact: <span class="rating-average">Average</span></li>
+                    <li>Speed: <span class="rating-average">Average</span></li>
+                    <li>OPS: <span class="rating-legendary">Legendary</span></li>
+                    <li>Defense: <span class="rating-good">Good</span></li>
+                    <li>Avoid K: <span class="rating-bad">Bad</span></li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section>
-        <h2>Last Season Reflection</h2>
-        <p>
-            Last season was a near disaster, where it got so bad I could no longer watch that many games. What I saw was the failure of Josh Donaldson, who couldn't even top .150, injuries, and an overall lack of motivation from the entire team.
-            There is much more to be said about last year, but I'm looking forward to discussing much brighter pastures this year with the addition of two young guys who know how to hit. They are former Red Sox outfielder Alex Verdugo and the elite Juan Soto.
-            As far as pitching goes, I've heard rumors that Gerrit Cole is injured, and let's only hope those are rumors. With Cole healthy and the addition of Marcus Stroman, improved Rodon, and a healthy Nestor Cortez, we should be ready to go. Here is an analysis of each player through my eyes.
-        </p>
-    </section>
-
     <footer>
-        <p>Contact: rsenna111@gmail.com</p>
+        <p>Contact: <a href="mailto:rsenna111@gmail.com" style="color: #3498db;">rsenna111@gmail.com</a></p>
     </footer>
 </body>
 </html>
