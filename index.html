@@ -3,225 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Robert Senna's personal website. Computer game enthusiast, technology lover, and American history buff.">
-    <title>Robert Senna - Personal Website</title>
+    <title>Action Sports Network</title>
     <style>
         body {
-            background-color: #333333; /* Dark gray background color */
-            color: #ffffff; /* White text color for better contrast */
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-
-        header {
-            background-color: #3498db; /* Dodger blue background color for the header */
-            color: #fff; /* White text color for the header */
-            padding: 20px;
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 15px;
             text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
-
-        section {
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .headline {
+            font-size: 28px;
+            font-weight: bold;
+            color: #cc0000;
+        }
+        .date {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .image-container {
+            text-align: center;
             margin: 20px 0;
-            overflow: hidden; /* Clearfix for the floated player boxes */
         }
-
-        h1, h2, p, li {
-            color: #ffffff; /* White text color for headings, paragraphs, and list items */
-        }
-
-        img {
+        .image-container img {
             max-width: 100%;
             height: auto;
-            display: block; /* Ensure images do not have stray spaces around them */
-            margin: 0 auto; /* Center the image within its container */
-        }
-
-        .player-box {
-            width: 300px;
-            background-color: #4CAF50; /* Dark green background color */
-            border: 1px solid #ccc;
-            margin: 10px;
-            padding: 10px;
-            text-align: center;
-            float: left; /* Float the boxes to create a horizontal layout */
-        }
-
-        .player-box img {
-            width: 150px; /* Adjust the size of the player's photo */
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .player-box h3 {
-            margin-bottom: 5px;
-            color: #ffffff; /* White text color for better contrast */
-        }
-
-        .player-box ul {
-            list-style-type: none;
-            padding: 0;
-            color: #ffffff; /* White text color for better contrast */
-        }
-
-        /* Rating colors */
-        .rating-legendary { color: darkred; }
-        .rating-excellent { color: purple; }
-        .rating-good { color: blue; }
-        .rating-average { color: yellow; }
-        .rating-bad { color: red; }
-        .rating-abysmal { color: orange; }
-
-        /* Flashing text animation */
-        .flashing-text {
-            animation: flash 1s infinite;
-        }
-
-        @keyframes flash {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        /* Responsive design */
-        @media (max-width: 768px) {
-            .player-box {
-                width: 100%;
-                float: none; /* Remove float for stacked layout on smaller screens */
-                clear: both; /* Clear floats */
-            }
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Robert Senna</h1>
-        <p>Computer Game Enthusiast | Technology Lover | American History Buff</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm Robert Senna! I have a deep passion for computer games, technology, and American history.
-            Join me on my journey as I explore these fascinating worlds and share my insights with you.
-        </p>
-        <h2 class="flashing-text">Happy Summer Days!!</h2>
-        <p>
-            <span class="flashing-text">Wishing you joy and warmth during this spring and summer!.</span>
-        </p>
-    </section>
-
-    <section>
-        <h2>Interests</h2>
-        <ul>
-            <li>Exploring the latest in technology and gadgets.</li>
-            <li>Conquering virtual worlds through computer games.</li>
-            <li>Delving into the rich history of the United States.</li>
-        </ul>
-    </section>
-
-  <section>
-    <h2>New York Yankees Commentary</h2>
-    <p>May 25, 2024</p>
-    <p>It's that time of year again for baseball, and the New York Yankees are doing great so far! But still, some questions and caveats remain. Can they survive injuries? As Gerrit Cole returns from injury, can he remain the same? Can Gil and Rodón remain consistent? Can they really rely on Holmes, the sinkerballer, for a consistent closer? What will they look for at the trade deadline? Only God knows these answers, so we will have to watch and see!</p>
-</section>
-
-        <!-- Player: Aaron Judge -->
-<div class="player-box">
-    <img src="Aaron Judge 2.png" alt="Aaron Judge 2">
-    <h3>Aaron Judge</h3>
-    <ul>
-        <li>Power: <span class="rating-legendary">Legendary</span></li>
-        <li>Contact: <span class="rating-average">Average</span></li>
-        <li>Speed: <span class="rating-average">Average</span></li>
-        <li>OPS: <span class="rating-legendary">Legendary</span></li>
-        <li>Defense: <span class="rating-good">Good</span></li>
-        <li>Avoid K: <span class="rating-bad">Bad</span></li>
-    </ul>
-</div>
-
-<!-- Player: Juan Soto -->
-<div class="player-box">
-    <img src="Juan Soto 2.png" alt="Juan Soto 2">
-    <h3>Juan Soto</h3>
-    <ul>
-        <li>Power: <span class="rating-excellent">Excellent</span></li>
-        <li>Contact: <span class="rating-legendary">Legendary</span></li>
-        <li>Speed: <span class="rating-good">Good</span></li>
-        <li>OPS: <span class="rating-legendary">Legendary</span></li>
-        <li>Defense: <span class="rating-good">Good</span></li>
-        <li>Avoid K: <span class="rating-excellent">Excellent</span></li>
-    </ul>
-</div>
-
-<!-- Player: Alex Verdugo -->
-<div class="player-box">
-    <img src="Alex V.png" alt="Alex V">
-    <h3>Alex Verdugo</h3>
-    <ul>
-        <li>Power: <span class="rating-bad">Bad</span></li>
-        <li>Contact: <span class="rating-excellent">Excellent</span></li>
-        <li>Speed: <span class="rating-average">Average</span></li>
-        <li>OPS: <span class="rating-average">Average</span></li>
-        <li>Defense: <span class="rating-excellent">Excellent</span></li>
-        <li>Avoid K: <span class="rating-excellent">Excellent</span></li>
-    </ul>
-</div>
-
-<!-- New Row for Gleyber Torres, Austin Wells, and Anthony Rizzo -->
-<!-- Player: Gleyber Torres -->
-<div class="player-box">
-    <img src="Gleybor.png" alt="Gleybor">
-    <h3>Gleyber Torres</h3>
-    <ul>
-        <li>Power: <span class="rating-good">Good</span></li>
-        <li>Contact: <span class="rating-average">Average</span></li>
-        <li>Speed: <span class="rating-good">Good</span></li>
-        <li>OPS: <span class="rating-good">Good</span></li>
-        <li>Defense: <span class="rating-poor">Poor</span></li>
-        <li>Avoid K: <span class="rating-poor">Poor</span></li>
-    </ul>
-</div>
-
-<!-- Player: Austin Wells -->
-<div class="player-box">
-    <img src="Austin.png" alt="Austin">
-    <h3>Austin Wells</h3>
-    <ul>
-        <li>Power: <span class="rating-poor">Poor</span></li>
-        <li>Contact: <span class="rating-average">Average</span></li>
-        <li>Speed: <span class="rating-excellent">Excellent</span></li>
-        <li>OPS: <span class="rating-poor">Poor</span></li>
-        <li>Defense: <span class="rating-legendary">Legendary</span></li>
-        <li>Avoid K: <span class="rating-average">Average</span></li>
-    </ul>
-</div>
-
-<!-- Player: Anthony Rizzo -->
-<div class="player-box">
-    <img src="Anthony.png" alt="Anthony">
-    <h3>Anthony Rizzo</h3>
-    <ul>
-        <li>Power: <span class="rating-good">Good</span></li>
-        <li>Contact: <span class="rating-good">Good</span></li>
-        <li>Speed: <span class="rating-average">Average</span></li>
-        <li>OPS: <span class="rating-average">Average</span></li>
-        <li>Defense: <span class="rating-good">Good</span></li>
-        <li>Avoid K: <span class="rating-average">Average</span></li>
-    </ul>
-</div>
-
-<!-- Player: Giancarlo Stanton -->
-<div class="player-box">
-    <img src="Gian.png" alt="Gian">
-    <h3>Giancarlo Stanton</h3>
-    <ul>
-        <li>Power: <span class="rating-legendary">Legendary</span></li>
-        <li>Contact: <span class="rating-poor">Poor</span></li>
-        <li>Speed: <span class="rating-poor">Poor</span></li>
-        <li>OPS: <span class="rating-good">Good</span></li>
-        <li>Defense: <span class="rating-poor">Poor</span></li>
-        <li>Avoid K: <span class="rating-abysmal">Abysmal</span></li>
-    </ul>
-</div>
+    <div class="header">Action Sports Network</div>
+    <div class="container">
+        <div class="headline">BREAKING: Aaron Judge Announces Shocking Retirement to Focus on Family</div>
+        <div class="date">March 31, 2025 – New York, NY</div>
+        
+        <div class="image-container">
+            <!-- Add your image of Aaron Judge here -->
+            <img src="your-image.jpg" alt="Aaron Judge Retirement Announcement">
+        </div>
+        
+        <div class="content">
+            <p>In a stunning development that has rocked the baseball world, New York Yankees captain and slugger Aaron Judge has officially announced his retirement from Major League Baseball, citing a desire to spend more time with his wife, Samantha Bracksieck, and their newborn child.</p>
+            <p>Judge, 32, made the announcement in a heartfelt press conference earlier today, stating that while baseball has been his life’s passion, "nothing comes before family." Sources close to the Yankees organization indicate that Judge’s decision came as a surprise, as he was expected to remain the face of the franchise for years to come.</p>
+            <p>"This was the hardest decision of my life," Judge said in an emotional statement. "But after a lot of conversations with my wife and family, I realized it was time for a new chapter. Baseball has given me everything, and I will forever be grateful to the Yankees, my teammates, and the fans."</p>
+            <p>Yankees general manager Brian Cashman released a statement shortly after the announcement, saying, "Aaron Judge is one of the greatest players to ever wear the pinstripes. While we are saddened by his decision, we respect and support him fully. His impact on this franchise and the game of baseball will never be forgotten."</p>
+            <p>The retirement sends shockwaves through Major League Baseball, as Judge was widely considered one of the league’s top superstars. After setting the American League home run record in 2022 and signing a massive contract extension in 2023, few expected his career to come to an abrupt end so soon.</p>
+            <p>Fans and analysts are already speculating on how the Yankees will move forward without their captain. With the season already underway, the team must quickly adjust to life without their biggest star.</p>
+            <p>Stay tuned for further updates as this story develops.</p>
+        </div>
+    </div>
+</body>
+</html>
